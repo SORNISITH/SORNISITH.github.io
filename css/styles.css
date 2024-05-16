@@ -1,0 +1,149 @@
+:root {
+    /*For Nav*/
+    --main-nav-: rgb(171, 183, 183);
+    --main-hover-:rgb(108, 122, 137);
+    /*For body*/
+    --main-body: rgb(210, 215, 211);
+  }
+
+
+
+  
+                    /* GLOBAL*/
+* {
+    margin: 0 ;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+body {
+    background-color: var(--main--);
+}
+/*--EFFECT-----------------------------------------*/
+.glass {
+    background: rgba(255, 255, 255, 0.27);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 50px 0px;
+    backdrop-filter: blur(12.3px);
+    -webkit-backdrop-filter: blur(12.3px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+/*--top section-----------------------------------------*/
+/*--nAV------------------------------------------------*/
+.behind_glass {
+    overflow: hidden;
+    width: 100%;
+    height: 70px;
+    border-radius: 100px 0px;
+}
+.behind_glass img {
+    width: 100%;
+    height: 100%;
+    opacity: 30%;
+}
+#top_section { 
+    position: fixed;   top: 0;
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    padding-top: 7px;
+}  
+
+.sec_frame{
+    height: 30%;
+    text-align: center;
+    letter-spacing: 5px;
+    
+}
+.sec_nav {
+    height: 70%;
+    width: 70%;
+    display: flex; justify-content: center; align-items: center; 
+    column-gap: 1px;
+    margin: auto;
+    
+}
+
+
+
+    
+.sec_nav_div,.sec_nav_div_img {
+    border-radius: 3px;
+    height: 100%;
+    min-width: 20%;
+    display: flex; justify-content: center; align-items: center;
+}
+
+.sec_nav_div:hover {
+
+    background-color: var(--main-body);
+    
+}
+
+.sec_nav_div a {
+    top: 50%;
+    color: black;
+    overflow: hidden;
+}
+
+    
+.downLoadSvg {
+ 
+    background-color: red;
+}
+/*end top section-----------------------------------------*/
+
+/*MAIN SECTION -------------------------------------------*/
+#main_section {
+    background-color: var(--main-body);
+    display: block;
+    width: 100%;
+}
+#main_section div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    border: 0;
+}
+
+#iframe {
+    
+    width: 80%;
+    height: 1000px;
+    border: 0;
+}
+
+
+
+
+
+/*END MAIN SECTION-----------------------------------------*/
+
+/*Footer---------------------------------------------------*/
+footer {
+    height: 100px;
+    background-color: var(--main-nav-);
+    
+}
+.copy-right {
+    height: 30px;
+ 
+}
+/*End Footer------------------------------------------------*/
+
+
+/*MEDiA QuERIES---------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 800px) {
+    .sec_nav {
+        width: 99%;
+    } 
+    
+    #iframe {
+    width: 100%;
+    
+    }
+}

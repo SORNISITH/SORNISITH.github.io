@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome App</title>
+    <link rel="stylesheet" href="./stylepalindrome.css">
+    
+</head>
+<body>
+    <section class="container">
+        <div class="panel">
+            <h1><strong>Nz App</strong></h1>
+            <h2>| Paldindrome |</h2>
+        </div>
+        <div id="definition" class="panel">
+            <p> A <i><u>palindrome</u></i> is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.</p>
+        </div>
+        <div class="panel">
+            <p>Enter in text to check for a palindrome</p>
+        </div>
+        <div class="panel">
+            <fieldset >
+                <input oninput="getAutoString()"  autofocus placeholder="Enter Text Here!" class="input" id="input1" type="text">
+                <input  onclick="getCompare()" class= "btn" type="submit" id="btnCheck">
+            </fieldset >       
+        </div>
+        <div class="panel">
+             <p class="resultColorTrue"  id="msgIsPalindrome">Please input Text above to Check</p>
+        </div>
+        
+       
+
+
+    </section>
+    <script src="./paldindrome.js"></script>
+</body>
+</html>
