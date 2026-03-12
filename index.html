@@ -25,7 +25,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NZ - PORTFOLIO</title>
     <script type="module" crossorigin src="/assets/index-DaTL9C32.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-Br9aMVjc.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-Br9aMVjc.css" />
+    <script>
+      (function () {
+        var redirect = window.location.search;
+        if (redirect.startsWith("?/")) {
+          var path = redirect.slice(1);
+          window.history.replaceState(null, null, path);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div class="relative" id="app"></div>
